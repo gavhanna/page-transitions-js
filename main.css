@@ -23,6 +23,14 @@
     opacity: 0;
     transform: translateX(calc(-100vw));
   }
+  35% {
+    opacity: 0.5;
+    transform: translateX(calc(5vw));
+  }
+  70% {
+    opacity: 0.8;
+    transform: translateX(calc(-5vw));
+  }
   100% {
     opacity: 1;
     transform: translateX(0px);
@@ -33,6 +41,10 @@
   0% {
     opacity: 1;
     transform: translateX(0px);
+  }
+  70% {
+    opacity: 1;
+    transform: translateX(calc(-5vw));
   }
   100% {
     opacity: 0;
