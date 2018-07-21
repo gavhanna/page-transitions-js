@@ -1,0 +1,41 @@
+.enter-transition {
+  animation: animate-in;
+  animation-duration: 300ms;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  animation-delay: 0ms;
+}
+
+.exit-transition {
+  animation: animate-out;
+  animation-duration: 300ms;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  animation-delay: 0ms;
+}
+
+@keyframes animate-in {
+  0% {
+    opacity: 0;
+    transform: translateX(calc(-100vw));
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+@keyframes animate-out {
+  0% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(calc(200vw));
+  }
+}
